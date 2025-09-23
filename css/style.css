@@ -1,7 +1,142 @@
 /* LAYOUT */
 
+/* grid for index */
+.kategorier {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+/* grid for produktliste */
+.flex-grid_1-1-1-1 {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
 
 
+
+/* grid for produkt */
+.flex-grid_1-1-1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.flexbox_menu {
+    display: flex;
+    flex-direction: column;
+}
 
 /* STYLE */
 
+main {
+    margin-top: 40px;
+}
+
+/* font */
+@font-face {
+    font-family: "overskrift";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "brødtekst";
+    src: url(../fonts/onest-static/Onest-Thin.ttf);
+}
+
+h1, h2, h3, h4, .LOGO {
+    font-family: "overskrift";
+}
+
+p, li, a, span {
+    font-family: "brødtekst";
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(212, 212, 212);
+    padding: 10px 20px;
+}
+
+.LOGO {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(78, 77, 65);
+    text-decoration: none;  
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li, nav ul a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(78, 77, 65);
+}
+
+
+/* Categories */
+
+.kategorier a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.gories1, .gories2, .gories3, .gories4, .gories5, .gories6 {
+    background-color: rgb(78, 77, 65);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* List of Products */
+
+.små_billeder img {
+    width: 100%;
+    height: auto;
+}
+
+.små_tekst {
+    font-size: small;
+}
+
+.pris_før {
+    text-decoration: line-through;
+    color: grey;
+    font-weight: bold;
+    }
+
+
+/* Product */
+.stor_billede img {
+    width: 100%;
+    height: auto;
+}
+
+.bold, .pris, .pris_nu {
+    font-weight: bold;
+    color: black;
+}
+
+.produkt_menu {
+    background-color: rgb(78, 77, 65);
+}
+.produkt_menu h4, .produkt_menu p {
+    color: white;
+}
+
+
+/* footer */
+footer {
+    border-top: 2px solid rgb(212, 212, 212);
+    margin-top: 100px;
+}
