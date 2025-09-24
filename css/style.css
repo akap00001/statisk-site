@@ -59,7 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid rgb(212, 212, 212);
+    border-bottom: 2px solid rgb(212, 212, 212);
     padding: 10px 20px;
 }
 
@@ -67,7 +67,7 @@ nav {
     font-size: 32px;
     font-weight: bold;
     color: rgb(78, 77, 65);
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 nav ul {
@@ -98,15 +98,21 @@ nav ul li, nav ul a {
     border-radius: 5px;
 }
 
+
 /* List of Products */
 
 .små_billeder img {
     width: 100%;
     height: auto;
+    border: 2px solid rgb(212, 212, 212);
 }
 
-.små_tekst {
+.små_tekst, .udsolgt {
     font-size: small;
+}
+
+.klasse {
+    font-size: 12px;
 }
 
 .pris_før {
@@ -115,6 +121,61 @@ nav ul li, nav ul a {
     font-weight: bold;
     }
 
+.udsolgt {
+    background-color: rgb(78, 77, 65);
+    padding: 2px 2px;
+    text-align: center;
+    color: white;
+}
+
+.tilbud {
+    background-color: rgb(134, 65, 65);
+    color: white;
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.end {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.top {
+    position: relative;
+    display: inline block;
+} 
+
+.små_tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*.produkter, .produkter_tilbud, .produkter_udsolgt, .produkter_begge a {
+    align-self: flexend;
+}*/
+
+.udsolgt {
+    position: absolute;
+    top: 0px;
+    opacity: 0.8;
+    padding: 2px 5px;
+} .dim {
+    opacity: 0.5;
+}
+
+/*.udsolgt {
+    grid-column: 1 / 2;
+    grid-row: 1/ 2;
+    align-self: start;
+    justify-self: center;
+} .små_billeder {
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+
 
 /* Product */
 .stor_billede img {
@@ -122,7 +183,7 @@ nav ul li, nav ul a {
     height: auto;
 }
 
-.bold, .pris, .pris_nu {
+.pris, .pris_nu {
     font-weight: bold;
     color: black;
 }
