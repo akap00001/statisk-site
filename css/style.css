@@ -20,11 +20,11 @@
 /* grid for produkt */
 .flex-grid_1-1-1 {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     margin-top: 50px;
 }
 
-.flexbox_menu {
+/*.flexbox_menu {
     display: flex;
     flex-direction: column;
 }
@@ -46,7 +46,7 @@ main {
     src: url(../fonts/onest-static/Onest-Thin.ttf);
 }
 
-h1, h2, h3, h4, .LOGO {
+h1, h2, h3, h4, .LOGO, .rød {
     font-family: "overskrift";
 }
 
@@ -195,6 +195,28 @@ nav ul li, nav ul a {
     color: white;
 }
 
+#basket {
+    background-color: rgb(134, 65, 65);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.produkt_info {
+    border-top: 2px solid rgb(212, 212, 212);
+}
+
+.puma {
+    margin-top: 50px;
+    border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+.rød {
+    color: rgb(134, 65, 65);
+}
 
 /* footer */
 footer {
