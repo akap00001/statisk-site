@@ -15,6 +15,16 @@
     margin-top: 50px;
 }
 
+.produkter {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.små_billeder {
+    grid-row: 1 / 2;
+}
+.små_tekst {
+    grid-row: 2 / 3;
+}
 
 
 /* grid for produkt */
@@ -126,6 +136,9 @@ nav ul li, nav ul a {
     padding: 2px 2px;
     text-align: center;
     color: white;
+
+    position: relative;
+        display: inline block;
 }
 
 .tilbud {

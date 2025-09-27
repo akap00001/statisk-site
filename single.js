@@ -5,12 +5,12 @@ const id = params.get("id");
 
 //console.log("mit id fra url'en:" + id);
 
-//indsæt "${id}" i stedet for "1525" senere
-
-fetch(`https://kea-alt-del.dk/t7/api/products/1525`)
-  .then(response => response.json()).then(product => {
+fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
+  .then((response) => response.json())
+  .then(data => showProduct(data));
     //console.log(product.articletype);
   
+    function showProduct(product) {
     produktMain.innerHTML = `
 <section class="flex-grid_1-1-1">
         <div class="stor_billede">
@@ -39,4 +39,4 @@ fetch(`https://kea-alt-del.dk/t7/api/products/1525`)
         </div> 
         </section>
         `;
-        });
+        };
