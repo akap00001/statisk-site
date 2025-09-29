@@ -1,8 +1,22 @@
-//console.log("det kører");
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+//console.log(category);
+
+/*
+const listH1 = document.querySelector("#heading");
+fetch(`https://kea-alt-del.dk/t7/api/${category}`)
+.then((response) => response.json())
+    .then((data) => updateH1 (data, category));
+function updateH1(data, category){
+
+
+listH1.innerHTML += `<h1 id="heading">${category}</h1>`;
+}
+*/
 
 const ListContainer = document.querySelector("main");
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=20`)
+fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
   .then((response) => response.json())
   .then(data => showProducts(data));
   
