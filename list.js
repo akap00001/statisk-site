@@ -2,17 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const category = params.get("category");
 //console.log(category);
 
-/*
-const listH1 = document.querySelector("#heading");
-fetch(`https://kea-alt-del.dk/t7/api/${category}`)
-.then((response) => response.json())
-    .then((data) => updateH1 (data, category));
-function updateH1(data, category){
-
-
-listH1.innerHTML += `<h1 id="heading">${category}</h1>`;
-}
-*/
+document.querySelector("h2").textContent = category;
 
 const ListContainer = document.querySelector("main");
 
@@ -28,7 +18,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
           ListContainer.innerHTML += `
         <article class="produkter ${element.soldout && "udsolgt"} ${element.discount && "tilbud"}">
           <div class="små_billeder">
-            <a href="produkt.html"> <img src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" alt="Sort Puma skrift rygsæk" /></a>
+             <img src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp" alt="Sort Puma skrift rygsæk" />
           </div>
           <h4>${element.productdisplayname}</h4>
             <div class="små_tekst">

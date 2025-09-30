@@ -1,7 +1,7 @@
 const produktMain = document.querySelector("#produktMain");
 
 const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
+const id = params.get("id") || 1163;
 
 //console.log("mit id fra url'en:" + id);
 
@@ -11,7 +11,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
     //console.log(product.articletype);
   
     function showProduct(product) {
-    produktMain.innerHTML = `
+    produktMain.innerHTML += `
 <section class="flex-grid_1-1-1">
         <div class="stor_billede">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="Sort Puma rygsæk" />
