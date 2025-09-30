@@ -10,11 +10,38 @@
 
 /* grid for produktliste */
 .flex-grid_1-1-1-1 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 50px;
 }
 
+.listContainer {
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+}
+.listContainer h1 {
+    grid-column: 1/-1;
+}
+
+.produkter {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* .små_billeder {
+    grid-row: 1 / 2;
+}
+.små_tekst {
+    grid-row: 2 / 3;
+}
 
 
 /* grid for produkt */
@@ -31,7 +58,7 @@
 
 /* STYLE */
 
-main {
+ main {
     margin-top: 40px;
 }
 
@@ -91,10 +118,10 @@ nav ul li, nav ul a {
     text-align: center;
 }
 
-.gories1, .gories2, .gories3, .gories4, .gories5, .gories6 {
+.gories {
     background-color: rgb(78, 77, 65);
     color: white;
-    padding: 10px;
+    padding: 30px;
     border-radius: 5px;
 }
 
@@ -121,31 +148,23 @@ nav ul li, nav ul a {
     font-weight: bold;
     }
 
+/* UDSOLGT OG TILBUD LABELS 
 .udsolgt {
     background-color: rgb(78, 77, 65);
     padding: 2px 2px;
     text-align: center;
     color: white;
-}
 
+    
+}
 .tilbud {
     background-color: rgb(134, 65, 65);
     color: white;
     text-align: center;
     font-size: small;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
 
-.end {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
 }
-
-.top {
-    position: relative;
-    display: inline block;
-} 
+*/
 
 .små_tekst {
     display: flex;
@@ -157,7 +176,7 @@ nav ul li, nav ul a {
     align-self: flexend;
 }*/
 
-.udsolgt {
+/*.udsolgt {
     position: absolute;
     top: 0px;
     opacity: 0.8;
