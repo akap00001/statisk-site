@@ -107,6 +107,7 @@ nav ul li, nav ul a {
     cursor: pointer;
     text-decoration: none;
     color: rgb(78, 77, 65);
+    font-weight: bold;
 }
 
 
@@ -134,7 +135,7 @@ nav ul li, nav ul a {
     border: 2px solid rgb(212, 212, 212);
 }
 
-.små_tekst, .udsolgt {
+.små_tekst {
     font-size: small;
 }
 
@@ -147,6 +148,21 @@ nav ul li, nav ul a {
     color: grey;
     font-weight: bold;
     }
+
+#filters {
+    display: flex;
+    gap: 10px;
+}
+
+#filters button {
+    background-color: rgb(134, 65, 65);
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 /* UDSOLGT OG TILBUD LABELS 
 .udsolgt {
