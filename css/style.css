@@ -140,8 +140,12 @@ nav ul li, nav ul a {
     color: white;
     border: none;
     padding: 6px;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
+}
+
+#filters button:hover, #sorting button:hover {
+    background-color: rgb(212, 212, 212);
 }
 
 .små_tekst {
@@ -150,6 +154,21 @@ nav ul li, nav ul a {
     justify-content: space-between;
 }
 
+#sorting {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#sorting button {
+    background-color: rgb(78, 77, 65);
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 /* Product */
 .stor_billede img {
